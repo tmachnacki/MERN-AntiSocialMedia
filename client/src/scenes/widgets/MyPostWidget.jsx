@@ -25,6 +25,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "state";
 
+
 // TODO: config root url
 
 const MyPostWidget = ({ picturePath }) => {
@@ -48,7 +49,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`${process.env.ROOT}/posts`, {
+    const response = await fetch(`/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
