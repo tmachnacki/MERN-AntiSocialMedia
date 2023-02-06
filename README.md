@@ -14,7 +14,7 @@ AntiSocialMedia is a full stack application implemented using the popular MERN s
 ### Server
 ```
 npm install
-nodemon server.js  #hot reload dev server
+nodemon server.js
 ```
 
 ### Client
